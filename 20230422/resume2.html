@@ -30,6 +30,11 @@
                 性别
             </td>
             <td>
+
+                <!-- input的type=radio 表示 选择 id用于区别不同的选择框 name用于表示相同的name只能选择一个
+                    label之间用于描述 选择中的 样式 并且点击样式 就可以进行选择
+                -->
+
                 <input type="radio" id="male" name="gender"> <label for="male"><img src="img/male.png" alt="" height="18px"> 男</label>
                 <input type="radio" id="female" name="gender"> <label for="female"><img src="img/female.png" alt="" height="18px"> 女</label>
             </td>
@@ -37,6 +42,9 @@
         <tr>
             <td>出生日期</td>
             <td>
+
+                <!-- select 表示选择 -->
+
                 <select>
                     <option>--请选择年份--</option>
                     <option>1991</option>
@@ -115,6 +123,9 @@
         <tr>
             <td>掌握的技能</td>
             <td>
+
+                <!-- textarea表示 输入文本框 -->
+                
                 <textarea cols="50" rows="20"></textarea>
             </td>
         </tr>
@@ -127,6 +138,9 @@
         <tr>
             <td></td>
             <td>
+
+                <!-- checkbox 表示复选框  可以选多个 -->
+
                 <input type="checkbox" id="notice"><label for="notice">我已仔细阅读工资的招聘要求</label>
             </td>
         </tr>
