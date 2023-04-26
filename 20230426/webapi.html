@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text">
+    <button>隐藏密码</button>
+
+    <style>
+        /* 开灯的情况 */
+        /* .light {
+            color: black;
+            background-color: white;
+        } */
+
+        /* 关灯状态 */
+        /* .dark {
+            color: white;
+            background-color: black;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        div {
+            height: 100%;
+        } */
+    </style>
+
+
+    <!-- <h3 style="font-size: 20px">请选择你的老婆</h3> -->
+
+    <!-- <div class="light">
+        这是一大段话, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nobis aut sed. Suscipit, minima voluptas? Adipisci inventore odit, a nostrum atque vel quae ex tempora temporibus aliquid. Modi, repellat itaque.
+        这是一大段话, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nobis aut sed. Suscipit, minima voluptas? Adipisci inventore odit, a nostrum atque vel quae ex tempora temporibus aliquid. Modi, repellat itaque.
+        这是一大段话, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nobis aut sed. Suscipit, minima voluptas? Adipisci inventore odit, a nostrum atque vel quae ex tempora temporibus aliquid. Modi, repellat itaque.
+        这是一大段话, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nobis aut sed. Suscipit, minima voluptas? Adipisci inventore odit, a nostrum atque vel quae ex tempora temporibus aliquid. Modi, repellat itaque.
+        这是一大段话, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nobis aut sed. Suscipit, minima voluptas? Adipisci inventore odit, a nostrum atque vel quae ex tempora temporibus aliquid. Modi, repellat itaque.
+    </div> -->
+
+
+    <!-- <div class="parent">
+        <div>11</div>
+        <div>22</div>
+        <div class="toDelete">33</div>
+    </div> -->
+
+    <script>
+        // let div = document.querySelector('.parent');
+        // let toDelete = document.querySelector('.toDelete');
+        // div.removeChild(toDelete);
+
+
+        // 创建一个新的 div
+        // let childDiv = document.createElement('div');
+        // childDiv.innerHTML = '44';
+        // div.appendChild(childDiv);
+
+
+        // let div = document.querySelector('div');
+        // div.onclick = function() {
+        //     // 通过 className 属性获取到 html 元素中的 class 属性
+        //     if (div.className == 'dark') {
+        //         div.className = 'light';
+        //     } else if (div.className == 'light') {
+        //         div.className = 'dark';
+        //     } else {
+        //         alert('class 错误!');
+        //     }
+        // }
+
+
+        // let h3 = document.querySelector('h3');
+        // h3.onclick = function() {
+        //     // 每次点击一下, 就把文字大小给放大 10 个像素
+        //     // 先获取到之前的大小. 
+        //     let oldSize = h3.style.fontSize;
+        //     oldSize = parseInt(oldSize);
+        //     oldSize += 10;
+        //     // 设置样式的值的时候, 务必要带上单位!!!
+        //     h3.style.fontSize = oldSize + 'px';
+        // }
+
+        // let all = document.querySelector('.all');
+        // let wives = document.querySelectorAll('.wife');
+
+        // // 先针对 all 来进行处理, 当用户点击 all 就可以对上述所有老婆进行选中和取消. 
+        // all.onclick = function() {
+        //     console.log('all.checked: ' + all.checked);
+        //     for (let i = 0; i < wives.length; i++) {
+        //         wives[i].checked = all.checked;
+        //     }
+        // }
+
+
+        // let input = document.querySelector('input');
+        // let addBtn = document.querySelector('#add');
+        // let minusBtn = document.querySelector('#minus');
+
+        // addBtn.onclick = function() {
+        //     let oldValue = parseInt(input.value);
+        //     // let oldValue = +input.value;
+        //     oldValue += 1;
+        //     input.value = oldValue;
+        // }
+
+        // minusBtn.onclick = function() {
+        //     let oldValue = parseInt(input.value);
+        //     oldValue -= 1;
+        //     input.value = oldValue;
+        // }
+
+
+        let input = document.querySelector('input');
+        let button = document.querySelector('button');
+        button.onclick = function() {
+            if (input.type == 'password') {
+                input.type = 'text';
+                button.innerHTML = '隐藏密码';
+            } else if (input.type == 'text') {
+                input.type = 'password';
+                button.innerHTML = '显示密码';
+            } else {
+                alert('type 错误!');
+            }
+        }
+
+
+
+        // let img = document.querySelector('img');
+        // console.log(img.src);
+        // console.log(img.width);
+        // console.log(img.alt);
+
+        // img.onclick = function() {
+        //     img.src = 'img/female.png';
+        // }
+
+
+        // 先选中 div
+        // let div = document.querySelector('div');
+        // // 获取元素里的内容
+        // console.log(div.innerHTML);
+
+        // // 还可以通过给这个属性赋值, 来起到修改的作用. 
+        // div.onclick = function() {
+        //     // 这里赋值, 不仅仅能够赋值文本, 还可以赋值一个 html 片段. 
+        //     div.innerHTML = '<button>这是按钮</button>';
+        // }
+
+
+
+        // 我想让 div 处理一下鼠标点击事件. 
+        // let div = document.querySelector('div');
+        // div.onclick = function() {
+        //     console.log('按下鼠标');
+        // }
+
+        // div.onmousemove = function() {
+        //     // console.log('鼠标移动');
+        // }
+
+        // div.onmouseenter = function() {
+        //     console.log('鼠标进来了');
+        // }
+
+        // div.onmouseleave = function() {
+        //     console.log('鼠标出去了');
+        // }
+
+        // 注意, querySelector 参数就是一个 CSS 选择器. 
+        // 可以使用前面学过的任意一种选择器, 来选中元素. 
+        // let divs = document.querySelectorAll('div');
+        // console.log(divs);
+        // dir 方法可以把 元素 以 对象 形态打印出来. 
+        // console.dir(div);
+    </script>
+</body>
+</html>
