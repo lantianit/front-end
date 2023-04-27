@@ -16,7 +16,7 @@
         /* .light {
             color: black;
             background-color: white;
-        } */
+        }
 
         /* 关灯状态 */
         /* .dark {
@@ -49,22 +49,20 @@
     </div> -->
 
 
-    <!-- <div class="parent">
+    <div class="parent">
         <div>11</div>
         <div>22</div>
         <div class="toDelete">33</div>
-    </div> -->
+    </div>
 
     <script>
-        // let div = document.querySelector('.parent');
-        // let toDelete = document.querySelector('.toDelete');
-        // div.removeChild(toDelete);
-
-
+        let div = document.querySelector('.parent');
+        let toDelete = document.querySelector('.toDelete');
+        div.removeChild(toDelete);
         // 创建一个新的 div
-        // let childDiv = document.createElement('div');
-        // childDiv.innerHTML = '44';
-        // div.appendChild(childDiv);
+        let childDiv = document.createElement('div');
+        childDiv.innerHTML = '44';
+        div.appendChild(childDiv);
 
 
         // let div = document.querySelector('div');
@@ -121,19 +119,19 @@
         // }
 
 
-        let input = document.querySelector('input');
-        let button = document.querySelector('button');
-        button.onclick = function() {
-            if (input.type == 'password') {
-                input.type = 'text';
-                button.innerHTML = '隐藏密码';
-            } else if (input.type == 'text') {
-                input.type = 'password';
-                button.innerHTML = '显示密码';
-            } else {
-                alert('type 错误!');
-            }
-        }
+        // let input = document.querySelector('input');
+        // let button = document.querySelector('button');
+        // button.onclick = function() {
+        //     if (input.type == 'password') {
+        //         input.type = 'text';
+        //         button.innerHTML = '隐藏密码';
+        //     } else if (input.type == 'text') {
+        //         input.type = 'password';
+        //         button.innerHTML = '显示密码';
+        //     } else {
+        //         alert('type 错误!');
+        //     }
+        // }
 
 
 
